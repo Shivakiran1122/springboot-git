@@ -2,12 +2,14 @@ package com.unittestingsprinboot.testingspringbootapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class TestingspringbootappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestingspringbootappApplication.class, args);
+		 ConfigurableApplicationContext run= SpringApplication.run(TestingspringbootappApplication.class, args);
+		  run.close();
 	}
 
 }
