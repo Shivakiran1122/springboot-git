@@ -6,13 +6,19 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class TestingspringbootappApplication {
-
+   
+private Map<String,Object> cache= new HashMap<String,Object>();
 	public static void main(String[] args) {
 		 ConfigurableApplicationContext run= SpringApplication.run(TestingspringbootappApplication.class, args);
 		 //changes of task 2
 		  run.close();
                   // this is the main class
                  // hello vetx branch
+                public void loadDataTocache()
+{
+  // logic
+
+}
 	}
 
 }
